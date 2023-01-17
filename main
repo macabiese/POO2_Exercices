@@ -57,7 +57,7 @@ class NPC:
         print("La force est:", self.force, "l'agilite est:", self.agilite, "le charisme est:", self.charisme, "la constitution est:", self.constitution, "l'intelligence est:", self.intelligence)
         print("La classe d'armure est:", self.classe_armure, "Les points de vie sont:", self.point_de_vie)
 
-class kobold:
+class kobold(NPC):
     def __init__(self):
         super().__init__()
 
@@ -69,7 +69,7 @@ class kobold:
         return
 
 
-class Heros:
+class Heros(NPC):
     def __init__(self):
         super().__init__()
 
